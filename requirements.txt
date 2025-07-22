@@ -1,10 +1,8 @@
+# phantom-ai-api-vercel/requirements.txt
 fastapi
-uvicorn[standard]
+uvicorn
 pydantic
-
-# Optional packages to add later:
-# openai
-# numpy
-# scikit-learn
-# transformers
-# pydantic-settings
+# You don't need uvicorn[standard] here as Vercel handles the ASGI server.
+# Also, python-dotenv, pyyaml, uvloop, watchfiles, websockets, httptools, h11, click, anyio, sniffio, idna
+# are often pulled as dependencies of uvicorn and starlette, or are not strictly needed by the serverless handler.
+# If you encounter issues, you might need to add specific versions from your local pip freeze.
