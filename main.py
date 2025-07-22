@@ -54,7 +54,7 @@ app = FastAPI(
 # Get the API key from Render's environment variables
 # IMPORTANT: In production, NEVER hardcode sensitive keys.
 # Render will set PHANTOM_AI_API_KEY for you.
-PHANTOM_AI_API_KEY = os.getenv("PHANTOM_AI_API_KEY")
+PHANTOM_AI_API_KEY = os.getenv("9ee95f55b4577e040da63a9d0a245088")
 
 # Basic check to ensure the key is set (will fail deployment if not)
 if not PHANTOM_AI_API_KEY:
