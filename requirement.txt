@@ -1,0 +1,12 @@
+# phantom-ai-backend/requirements.txt
+fastapi
+uvicorn[standard]
+pydantic # FastAPI often pulls this, but explicit is good
+# pydantic-settings # If you plan to use advanced Pydantic settings management
+# openai # If you're using OpenAI's API
+# Add any other specific AI/ML libraries here, e.g.:
+# numpy
+# scikit-learn
+# transformers # If using Hugging Face models (can be large!)
+# You can generate this file automatically by running `pip freeze > requirements.txt`
+# in your local virtual environment after installing everything.
